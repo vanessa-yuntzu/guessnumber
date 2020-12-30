@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf‐8">  
+	<title>109306079</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		function myFunction(guessnumber,rand){
+		if(guessnumber=rand){
+			alert("Correct!!!!")
+		}
+	}
+    var rand;
+	var guessnumber;
+	rand=Math.floor((Math.random()*10+1));
+	guessnumber=window.prompt("Please guess a number from 1 to 10")
+	while(guessnumber!=rand){
+		guessnumber=window.prompt("Wrong!Please try again")
+	}
+	myFunction(guessnumber,rand);
+	
+</script>
+</body>
+</html>
